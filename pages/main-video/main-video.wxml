@@ -1,0 +1,8 @@
+<view class="video-list">
+    <block wx:for="{{videoList}}" wx:key="id">
+        <video-item itemData="{{item}}" data-item="{{item}}"></video-item>
+    </block>
+    <view class="video-item"></view>
+</view>
+
+<view wx:if="{{!hasMore}}" class="none">暂时没有更多数据了</view>

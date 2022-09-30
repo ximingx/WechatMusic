@@ -1,0 +1,50 @@
+<view class="detail-video-container">
+    <video src="{{videoUrl}}"
+           class="detail-video"
+           autoplay="true" referrer-policy="origin" danmu-btn="true"
+           enable-danmu="true" danmu-list="{{commit}}" muted="true"
+           enable-auto-rotation="true"></video>
+    <scroll-view class="fex-container"
+                 scroll-y="true">
+        <view class="title-text">
+            <text>{{data.name}} - {{data.artistName}}</text>
+        </view>
+        <view class="data-time">
+            <text>{{data.publishTime}}</text>
+            <text>分享： {{data.shareCount}} 播放： {{data.playCount}}</text>
+        </view>
+        <view wx:if="{{data.desc.length !== 0 && data.desc !== ' '}}"
+              class="section"></view>
+        <block wx:if="{{data.desc.length !== 0 && data.desc !== ' '}}">
+            <view class="desc-text">
+                <text>{{data.desc}}</text>
+            </view>
+        </block>
+        <view class="section"></view>
+        <text class="about-title">相关MV</text>
+        <view class="about">
+            <block wx:for="{{about}}" wx:key="vid">
+                <view class="about-item">
+                    <view class="album-father"
+                          data-id="{{item.id}}" bind:tap="toDetailMV">
+                        <image src="{{item.cover}}"
+                               class="about-item-image"
+                               bind:tap="goNewDetail"></image>
+                        <view class="album-text">
+                            <view class="play-count">
+                                <image src="/assets/images/video/play.png"
+                                       class="play-count-image" mode="widthFix"></image>{{item.playCount}}
+                            </view>
+                            <view class="duration">{{item.duration}}</view>
+                        </view>
+                    </view>
+                    <view class="about-item-text">
+                        <text>{{item.name}}</text>
+                    </view>
+                </view>
+            </block>
+            <view class="about-item"></view>
+            <view class="about-item"></view>
+        </view>
+    </scroll-view>
+</view>

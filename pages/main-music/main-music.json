@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "section-header": "/components/section-header/section-header"
+  },
+  "navigationBarTitleText": "音乐",
+  "navigationBarBackgroundColor": "#fafafa"
+}
