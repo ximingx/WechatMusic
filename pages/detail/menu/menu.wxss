@@ -1,0 +1,51 @@
+.menu {
+
+}
+
+.menu .header {
+  display: flex;
+  justify-content: center;
+}
+
+.menu .list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.menu .list .item {
+  width: 42vw;
+  height: 42vw;
+  margin: 12rpx 0;
+  position: relative;
+}
+
+.menu .list .item .image {
+  width: 42vw;
+  height: 42vw;
+  border-radius: 24rpx;
+}
+
+.menu .list .item .count {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 6rpx 18rpx;
+  border-radius: 24rpx;
+  font-size: 18rpx;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.menu .list .text {
+  font-size: 28rpx;
+  font-weight: 300;
+  display: inline-block;
+  white-space: nowrap;
+  /* 控制溢出隐藏 */
+  overflow: hidden;
+  /* 对文本进行控制， 显示省略号 */
+  text-overflow: ellipsis;
+  width: 42vw;
+}

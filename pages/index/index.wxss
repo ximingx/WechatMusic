@@ -1,0 +1,38 @@
+page {
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  background-color: rgba(250, 250, 250, 0.8);
+}
+
+/*搜索框样式*/
+.van-search {
+  width: 100% !important;
+  padding: 0 !important;
+  background-color: rgba(250, 250, 250, 0.8) !important;
+}
+
+.van-cell {
+  padding: 0 0 8px 0 !important;
+}
+
+.van-field__control {
+  background-color: #ffffff !important;
+}
+
+.van-icon-search {
+  color: #36b74d!important;
+}
+
+/*.van-field__placeholder {*/
+/*  color: #36b74d!important;*/
+/*}*/
+
+/*轮播图设置*/
+.banner {
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.banner .item .banner-image {
+  width: 100%;
+}

@@ -1,4 +1,4 @@
-import config from '../config';
+const config = require('../config');
 class Request {
   constructor() {
     this.baseURL = config.baseUrl
@@ -68,4 +68,5 @@ class Request {
     })
   }
 }
-export default new Request()
+
+module.exports = new Request()

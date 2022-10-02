@@ -9,7 +9,7 @@ Component({
   methods: {
     onVideoItemTap() {
         wx.navigateTo({
-            url: `/pages/detail-video/detail-video?id=${this.properties.itemData.id}`
+            url: `/pages/detail/video/video?id=${this.properties.itemData.id}`
         })
     }
   }
