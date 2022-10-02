@@ -1,0 +1,5 @@
+<view class="ranking">
+    <block wx:for="{{item}}" wx:for-item="items" wx:key="id">
+        <text>{{items.name}}</text>
+    </block>
+</view>

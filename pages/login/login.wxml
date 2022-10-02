@@ -1,0 +1,1 @@
+<view bind:tap="toIndexPage">to index</view>

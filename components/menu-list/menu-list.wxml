@@ -1,0 +1,9 @@
+<view class="hot">
+    <section-header title="{{title}}" hasMore bind:moreTap="moreTap"></section-header>
+    <scroll-view class="hot-list"
+                 scroll-x enable-flex>
+        <block wx:for="{{menuList}}" wx:key="id">
+            <hot-item item="{{item}}" class="hot-item"></hot-item>
+        </block>
+    </scroll-view>
+</view>

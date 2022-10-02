@@ -1,0 +1,11 @@
+<iew class="item">
+    <view class="left">
+        <image src="{{item.al.picUrl}}"
+               class="image"></image>
+        <view class="info">
+            <view class="title">{{item.name}}</view>
+            <view class="artist">{{item.ar[0].name}}</view>
+        </view>
+    </view>
+    <van-icon name="arrow"/>
+</iew>

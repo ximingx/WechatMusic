@@ -1,0 +1,12 @@
+.hot-list {
+  display: flex;
+  width: 750rpx;
+  margin-left: -24rpx;
+  height: 35vw;
+  min-height: 200rpx;
+}
+
+.hot-item {
+  flex-shrink: 0;
+  margin: 5rpx 10rpx;
+}

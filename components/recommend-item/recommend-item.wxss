@@ -1,0 +1,41 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 18rpx 0;
+  padding: 3rpx 0;
+}
+
+.item .left {
+  display: flex;
+  align-items: center;
+}
+
+.item .left .image {
+  width: 126rpx;
+  height: 126rpx;
+  border-radius: 15rpx;
+}
+
+.item .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 126rpx;
+  margin-left: 25rpx;
+}
+
+.item .info .title {
+  font-size: 26rpx;
+  color: #333;
+}
+
+.item .info .artist {
+  font-size: 22rpx;
+  color: #444;
+}
+
+
+
+
+
+
