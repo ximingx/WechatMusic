@@ -1,0 +1,4 @@
+page {
+  --app-background: #fff;
+  --app-text-color: #000;
+}

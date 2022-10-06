@@ -3,9 +3,15 @@ Page({
   onLoad: function (options) {
 
   },
-  toIndexPage() {
+  noneLogin() {
     wx.switchTab({
       url: '/pages/index/index'
     })
+  },
+  checkPhone() {
+
+  },
+  checkCode() {
+
   }
 });

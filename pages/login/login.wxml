@@ -1,1 +1,13 @@
-<view bind:tap="toIndexPage">to index</view>
+<view class="container">
+    <view class="view">
+        <view>
+            <input placeholder="请输入你的手机号"/>
+            <button bind:tap="checkPhone">发送验证码</button>
+        </view>
+        <input placeholder="请输入你的验证码"/>
+        <view>
+            <button bind:tap="checkCode">登录</button>
+            <button bind:tap="noneLogin">游客登陆</button>
+        </view>
+    </view>
+</view>
