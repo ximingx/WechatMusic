@@ -1,6 +1,9 @@
 // app.js
 App({
   globalData: {
+    config: {
+      baseURL: 'http://localhost:3000'
+    },
     screen: {
       width: 0,
       height: 0

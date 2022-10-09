@@ -7,7 +7,7 @@ Page({
   data: {
     searchValue: '',
     banners: [],
-    bannerHeight: 150,
+    bannerHeight: 112,
     useCount: 0,
     recommendList: [],
     recommendMenuList: [],
@@ -83,6 +83,17 @@ Page({
       })
     })
   },
+  // 热门歌单
+  async fetchHotSongs() {
+    let res = await getTopPlayList()
+    this.setData({
+      hotMenuList: res.playlists
+    })
+    let data = await getTopPlayList("华语")
+    this.setData({
+      recommendMenuList: data.playlists
+    })
+  },
   // 推荐热歌
   async getPlaylist() {
     let res = await getPlaylist(3778678)
@@ -93,17 +104,6 @@ Page({
   onRecommendMoreClick() {
     wx.navigateTo({
       url: '/pages/detail/recommend/recommend'
-    })
-  },
-  // 热门歌单
-  async fetchHotSongs() {
-    let res = await getTopPlayList()
-    this.setData({
-      hotMenuList: res.playlists
-    })
-    let data = await getTopPlayList("华语")
-    this.setData({
-      recommendMenuList: data.playlists
     })
   }
 })

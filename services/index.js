@@ -1,7 +1,8 @@
-const config = require('../config');
+let app = getApp()
+
 class Request {
   constructor() {
-    this.baseURL = config.baseUrl
+    this.baseURL = app.globalData.config.baseURL
   }
 
   get(url, data) {

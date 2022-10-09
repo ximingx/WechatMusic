@@ -2,11 +2,11 @@
 
 > 网易云音乐借口地址: https://binaryify.github.io/NeteaseCloudMusicApi/#/
 
-![./README/img_1.png](README/img_1.png)
+![./README/img_1.png](assets/README/img_1.png)
 
 > 第三方组件库 Vant Weapp: https://vant-contrib.gitee.io/vant-weapp 
 
-![./README/img.png](README/img.png)
+![./README/img.png](assets/README/img.png)
 
 > 项目地址: 暂时未上线
 
