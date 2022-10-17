@@ -1,1 +1,3 @@
-<view>我的</view>
+<scroll-view scroll-x>
+
+</scroll-view>

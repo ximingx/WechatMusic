@@ -3,7 +3,8 @@ const {getTopMV} = require('../../services/video/index');
 Page({
   data: {
     videoList: [],
-    hasMore: true
+    hasMore: true,
+    offset: 0
   },
   onLoad: function () {
     this.fetchTopMV()

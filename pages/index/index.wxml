@@ -4,7 +4,8 @@
                 bind:click-input="onSearchClick"></van-search>
     <swiper style="height: {{ bannerHeight + 'px' }};"
             class="banner"
-            circular autoplay indicator-dots>
+            circular autoplay indicator-dots
+            previous-margin="44rpx" next-margin="44rpx">
         <block wx:for="{{ banners }}" wx:key="targetId">
             <swiper-item class="item">
                 <image src="{{ item.imageUrl }}"

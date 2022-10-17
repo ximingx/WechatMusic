@@ -1,14 +1,13 @@
 <wxs src="/utils/format.wxs" module="format"></wxs>
 
 <view class="item-container">
-    <view class="item-album"
-          bind:tap="onVideoItemTap" >
+          bind:tap="onVideoItemTap">
         <image src="{{ itemData.cover }}"
                class="item-album-image" mode="widthFix"></image>
         <view class="item-info">
             <view class="item-count">
                 <image src="../../assets/images/video/play.png"
-                        class="item-image" mode="widthFix"></image>
+                       class="item-image" mode="widthFix"></image>
                 <text>{{ format.formatCount(itemData.playCount) }}</text>
             </view>
             <view class="item-duration">{{ format.formatTime(itemData.mv.videos[0].duration) }}</view>
