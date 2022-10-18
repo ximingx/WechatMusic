@@ -20,7 +20,7 @@ page {
 }
 
 .van-icon-search {
-  color: #36b74d!important;
+  color: #36b74d !important;
 }
 
 /*.van-field__placeholder {*/
@@ -36,3 +36,5 @@ page {
 .banner .item .banner-image {
   width: 100%;
 }
+
+

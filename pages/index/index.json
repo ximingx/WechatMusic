@@ -3,8 +3,7 @@
     "van-search": "@vant/weapp/search/index",
     "section-header": "/components/section-header/section-header",
     "recommend-item": "/components/recommend-item/recommend-item",
-    "menu-list": "/components/menu-list/menu-list",
-    "ranking-item": "/components/ranking-item/ranking-item"
+    "menu-list": "/components/menu-list/menu-list"
   },
   "navigationBarTitleText": "音乐",
   "navigationBarBackgroundColor": "#fafafa"

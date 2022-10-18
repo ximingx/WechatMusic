@@ -12,8 +12,7 @@ Page({
     recommendList: [],
     recommendMenuList: [],
     hotMenuList: [],
-    topPlayList: [],
-    rankingInfos: {}
+    topPlayList: []
   },
   // 生命周期函数
   onLoad: function (options) {
@@ -23,24 +22,6 @@ Page({
     recommendStore.onState('recommendList', (value) => {
       this.setData({
         recommendList: value.slice(0, 6)
-      })
-    })
-    rankingStore.onState('newRankingList', (value) => {
-      let newInfo = {...this.data.rankingInfos, newRankingList: value}
-      this.setData({
-        rankingInfos: newInfo
-      })
-    })
-    rankingStore.onState('origionalRankingList', (value) => {
-      let newInfo = {...this.data.rankingInfos, origionalRankingList: value}
-      this.setData({
-        rankingInfos: newInfo
-      })
-    })
-    rankingStore.onState('upRankingList', (value) => {
-      let newInfo = {...this.data.rankingInfos, upRankingList: value}
-      this.setData({
-        rankingInfos: newInfo
       })
     })
     recommendStore.dispatch('fetchRecommendSongs')

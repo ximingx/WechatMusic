@@ -1,0 +1,130 @@
+music
+├─.eslintrc.js
+├─README.md
+├─app.js
+├─app.json
+├─app.wxss
+├─package-lock.json
+├─package.json
+├─project.config.json
+├─project.private.config.json
+├─sitemap.json
+├─tree.txt
+├─utils2
+|   ├─format.wxs
+|   └random-color.js
+├─store
+|   ├─rankingStore.js
+|   └recommendStore.js
+├─services
+|    ├─index.js
+|    ├─video
+|    |   └index.js
+|    ├─user
+|    |  └index.js
+|    ├─music
+|    |   └index.js
+|    ├─login
+|    |   └index.js
+|    ├─index
+|    |   └index.js
+├─pages
+|   ├─web
+|   |  ├─web.js
+|   |  ├─web.json
+|   |  ├─web.wxml
+|   |  └web.wxss
+|   ├─video
+|   |   ├─video.js
+|   |   ├─video.json
+|   |   ├─video.wxml
+|   |   └video.wxss
+|   ├─user
+|   |  ├─user.js
+|   |  ├─user.json
+|   |  ├─user.wxml
+|   |  └user.wxss
+|   ├─music
+|   |   ├─music.js
+|   |   ├─music.json
+|   |   ├─music.wxml
+|   |   └music.wxss
+|   ├─login
+|   |   ├─login.js
+|   |   ├─login.json
+|   |   ├─login.wxml
+|   |   └login.wxss
+|   ├─index
+|   |   ├─index.js
+|   |   ├─index.json
+|   |   ├─index.wxml
+|   |   └index.wxss
+|   ├─detail
+|   |   ├─video
+|   |   |   ├─video.js
+|   |   |   ├─video.json
+|   |   |   ├─video.wxml
+|   |   |   └video.wxss
+|   |   ├─search
+|   |   |   ├─search.js
+|   |   |   ├─search.json
+|   |   |   ├─search.wxml
+|   |   |   └search.wxss
+|   |   ├─recommend
+|   |   |     ├─recommend.js
+|   |   |     ├─recommend.json
+|   |   |     ├─recommend.wxml
+|   |   |     └recommend.wxss
+|   |   ├─menu
+|   |   |  ├─menu.js
+|   |   |  ├─menu.json
+|   |   |  ├─menu.wxml
+|   |   |  └menu.wxss
+├─components
+|     ├─video-item
+|     |     ├─video-item.js
+|     |     ├─video-item.json
+|     |     ├─video-item.wxml
+|     |     └video-item.wxss
+|     ├─section-header
+|     |       ├─section-header.js
+|     |       ├─section-header.json
+|     |       ├─section-header.wxml
+|     |       └section-header.wxss
+|     ├─recommend-item
+|     |       ├─recommend-item.js
+|     |       ├─recommend-item.json
+|     |       ├─recommend-item.wxml
+|     |       └recommend-item.wxss
+|     ├─ranking-item
+|     |      ├─ranking-item.js
+|     |      ├─ranking-item.json
+|     |      ├─ranking-item.wxml
+|     |      └ranking-item.wxss
+|     ├─menu-list
+|     |     ├─menu-list.js
+|     |     ├─menu-list.json
+|     |     ├─menu-list.wxml
+|     |     └menu-list.wxss
+|     ├─hot-item
+|     |    ├─hot-item.js
+|     |    ├─hot-item.json
+|     |    ├─hot-item.wxml
+|     |    └hot-item.wxss
+├─assets
+|   ├─images
+|   |   ├─video
+|   |   |   └play.png
+|   |   ├─tabbar
+|   |   |   ├─index.png
+|   |   |   ├─index_active.png
+|   |   |   ├─music.png
+|   |   |   ├─music_active.png
+|   |   |   ├─user.png
+|   |   |   ├─user_active.png
+|   |   |   ├─video.png
+|   |   |   └video_active.png
+|   |   ├─personal
+|   ├─README
+|   |   ├─img.png
+|   |   └img_1.png
