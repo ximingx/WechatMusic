@@ -28,8 +28,7 @@
                     <view class="album-father"
                           data-id="{{item.id}}" bind:tap="toDetailMV">
                         <image src="{{item.cover}}"
-                               class="about-item-image"
-                               bind:tap="goNewDetail"></image>
+                               class="about-item-image"></image>
                         <view class="album-text">
                             <view class="play-count">
                                 <image src="/assets/images/video/play.png"

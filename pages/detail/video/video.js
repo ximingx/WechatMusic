@@ -66,7 +66,7 @@ Page({
   toDetailMV(e) {
     var id = e.currentTarget.dataset.id;
     wx.navigateTo({
-      url: `/pages/detail-video/detail-video?id=${id}`
+      url: `/pages/detail/video/video?id=${id}`
     })
   }
 });
