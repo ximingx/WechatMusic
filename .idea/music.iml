@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="WebstormProjects" />
+    <orderEntry type="module" module-name="比赛" />
   </component>
 </module>

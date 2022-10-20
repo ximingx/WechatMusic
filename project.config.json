@@ -12,6 +12,8 @@
         "miniprogramNpmDistDir": "./"
       }
     ],
+    "ignoreUploadUnusedFiles": true,
+    "ignoreDevUnusedFiles": false,
     "bundle": false,
     "userConfirmedBundleSwitch": false,
     "urlCheck": true,
@@ -25,7 +27,7 @@
     "minified": true,
     "autoAudits": false,
     "newFeature": false,
-    "uglifyFileName": false,
+    "uglifyFileName": true,
     "uploadWithSourceMap": true,
     "useIsolateContext": true,
     "nodeModules": false,

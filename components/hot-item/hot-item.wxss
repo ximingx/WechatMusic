@@ -29,7 +29,7 @@
   color: #fff;
 }
 
-.item .bottom {
+.item .bottom { 
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;

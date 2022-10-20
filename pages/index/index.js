@@ -1,5 +1,4 @@
 const recommendStore = require('../../store/recommendStore')
-const rankingStore = require('../../store/rankingStore')
 const {getSwiper, getPlaylist, getTopPlayList} = require('../../services/index/index')
 
 
@@ -25,7 +24,6 @@ Page({
       })
     })
     recommendStore.dispatch('fetchRecommendSongs')
-    rankingStore.dispatch("fetchRankingDataAction")
   },
   // 搜索框
   onSearchClick() {
