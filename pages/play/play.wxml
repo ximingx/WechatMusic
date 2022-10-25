@@ -1,0 +1,66 @@
+<wxs src="../../utils/format.wxs" module="format"></wxs>
+
+<image src="{{currentSong.al.picUrl}}"
+       class="bg-image" mode="aspectFill"></image>
+<view class="bg-color"></view>
+
+<view class="navbar">
+    <view class="status" style="height: {{statusHeight}}px"></view>
+    <view class="nav">
+        <view class="left">
+            <van-icon name="arrow-left" bind:tap="navBack"/>
+        </view>
+        <view class="center">
+            <view class="center-item {{currentPage === 0 ? 'active' : ''}}"
+                  bindtap="changePage" data-index="{{0}}">歌曲
+            </view>
+            <view class="center-item">|</view>
+            <view class="center-item {{currentPage === 1 ? 'active' : ''}}"
+                  bindtap="changePage" data-index="{{1}}">歌词
+            </view>
+        </view>
+        <view class="right"></view>
+    </view>
+</view>
+
+<swiper style="height: {{contentHeight}}px;" class="swiper"
+        bindchange="onSwiperChange" current="{{currentPage}}">
+    <swiper-item class="swiper-music">
+        <view class="info">
+            <view class="name">{{currentSong.name}}</view>
+            <view class="singer">{{currentSong.ar[0].name}}</view>
+        </view>
+        <view class="album">
+            <image src="{{currentSong.al.picUrl}}" mode="widthFix"></image>
+        </view>
+        <view class="lyric"> {{currentLyric}} </view>
+        <view class="process">
+            <slider class="slider" block-size="12"
+                    value="{{sliderValue}}"
+                    bindchange="onSliderChange" bindchanging="onSliderChanging"></slider>
+            <view class="time">
+                <view class="current">{{format.formatTime(currentTime) || "00:00"}}</view>
+                <view class="duration">{{format.formatTime(durationTime)}}</view>
+            </view>
+        </view>
+        <view class="control">
+          <text class="iconfont icon-bofang-xunhuanbofang"></text>
+          <text class="iconfont icon-diyiyeshouyeshangyishou"></text>
+          <text class="{{isPlay ? 'iconfont icon-zanting' : 'iconfont icon-bofang1'}}"
+          bindtap="onPlayPause"></text>
+          <text class="iconfont icon-zuihouyiyemoyexiayishou"></text>
+          <text class="iconfont icon-bofangliebiao"></text>
+        </view>
+    </swiper-item>
+    <swiper-item class="swiper-page">
+        <scroll-view scroll-y class="scroll-page">
+            <view class="lyrics-list">
+                <view class="lyrics-item" wx:for="{{lyrics}}" wx:key="{{index}}"
+                      wx:for-item="item" wx:for-index="index">
+<!--                    <view class="lyrics-time">{{format.formatTime(item.time)}}</view>-->
+                    <view class="lyrics-text">{{item.text}}</view>
+                </view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+</swiper>
