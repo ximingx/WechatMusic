@@ -1,4 +1,4 @@
-<iew class="item">
+<view class="item" bind:tap="onSongItemClick">
     <view class="left">
         <image src="{{item.al.picUrl}}"
                class="image"></image>
@@ -7,5 +7,6 @@
             <view class="artist">{{item.ar[0].name}}</view>
         </view>
     </view>
-    <van-icon name="arrow"/>
-</iew>
+    <image src="{{item.al.picUrl}}" class="bg-image"></image>
+    <view class="blur"></view>
+</view>

@@ -1,8 +1,11 @@
 .item {
   display: flex;
-  justify-content: space-between;
-  margin: 18rpx 0;
+  box-sizing: border-box;
+  width: 44vw;
+  margin: 1vh 1vw;
   padding: 3rpx 0;
+  position: relative;
+  color: white;
 }
 
 .item .left {
@@ -13,7 +16,7 @@
 .item .left .image {
   width: 126rpx;
   height: 126rpx;
-  border-radius: 15rpx;
+  border-radius: 12rpx;
 }
 
 .item .info {
@@ -26,12 +29,30 @@
 
 .item .info .title {
   font-size: 26rpx;
-  color: #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .item .info .artist {
   font-size: 22rpx;
-  color: #444;
+}
+
+.bg-image, .blur {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 12rpx;
+}
+
+.blur {
+  background-color: rgba(0, 0, 0, .2);
+  backdrop-filter: blur(30px);
 }
 
 

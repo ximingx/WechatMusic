@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 24rpx 0;
+  margin: 22rpx 0;
 }
 
 .header .left {

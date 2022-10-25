@@ -33,6 +33,12 @@ Page({
   },
   // 轮播图
   async getSwiper() {
+    if(wx.getStorageSync('banner')) {
+        this.setData({
+            banners: wx.getStorageSync('banner')
+        })
+        return
+    }
     let res = await getSwiper()
     this.setData({
       banners: res.banners
@@ -77,12 +83,7 @@ Page({
   async getPlaylist() {
     let res = await getPlaylist(3778678)
     this.setData({
-      recommendList: res.playlist.tracks.slice(0, 6)
-    })
-  },
-  onRecommendMoreClick() {
-    wx.navigateTo({
-      url: '/pages/detail/recommend/recommend'
+      recommendList: res.playlist.tracks.slice(0, 8)
     })
   }
 })

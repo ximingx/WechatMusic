@@ -1,4 +1,2 @@
-page {
-  --app-background: #fff;
-  --app-text-color: #000;
-}
+@import "/assets/iconfont/iconfont.wxss";
+

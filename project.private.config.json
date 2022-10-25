@@ -5,7 +5,7 @@
     "compileHotReLoad": true,
     "urlCheck": false,
     "preloadBackgroundData": false,
-    "autoAudits": true
+    "autoAudits": false
   },
   "condition": {
     "miniprogram": {
@@ -30,8 +30,23 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/play/play",
+          "query": "id=1807799505",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/user",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
-  }
+  },
+  "libVersion": "2.21.4"
 }

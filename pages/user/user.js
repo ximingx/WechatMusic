@@ -1,6 +1,8 @@
 Page({
-  data: {},
-  onLoad: function (options) {
+  data: {
+    userInfo: {}
+  },
+  onLoad: async function (options) {
 
-  }
+  },
 });

@@ -3,8 +3,19 @@ Component({
     item: {
         type: Object,
         value: {}
+    },
+    index: {
+        type: Number,
+        value: 0
     }
   },
   data: {},
-  methods: {}
+  methods: {
+    onSongItemClick() {
+      const id = this.properties.item.id;
+      wx.navigateTo({
+        url: `/pages/play/play?id=${id}`,
+      })
+    }
+  }
 });

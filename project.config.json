@@ -12,6 +12,12 @@
         "miniprogramNpmDistDir": "./"
       }
     ],
+    "easysass.format": [
+      {
+        "format": "expanded",
+        "extension": ".wxss"
+      }
+    ],
     "ignoreUploadUnusedFiles": true,
     "ignoreDevUnusedFiles": false,
     "bundle": false,

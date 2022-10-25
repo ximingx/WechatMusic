@@ -5,19 +5,20 @@ function getTourist() {
   return Request.get("/register/anonimous")
 }
 
-//说明 : 调用此接口 ,传入手机号码, 可发送验证码
-function getUserPhone(phone) {
-  return Request.get("/captcha/sent", {
-    phone: phone
-  })
+//说明 : 调用此接口 , 传入手机号码,密码可登录
+function toUsePhonerLogin(phone, password) {
+    return Request.get("/login/cellphone", {
+        phone: phone,
+        password: password
+    })
 }
 
-//说明 : 调用此接口 ,传入手机号码和验证码, 可校验验证码是否正确
-function checkUserPhone(phone, captcha) {
-  return Request.post("/captcha/verify", {
-    phone: phone,
-    captcha: captcha
-  })
+// /login?email=xxx@163.com&password=yyy
+function toUserEmailLogin(email, password) {
+    return Request.get("/login", {
+        email: email,
+        password: password
+    })
 }
 
 //说明 : 调用此接口 , 可获取登录状态
@@ -32,8 +33,8 @@ function toUserLogout() {
 
 module.exports = {
     getTourist,
-    getUserPhone,
-    checkUserPhone,
+    toUsePhonerLogin,
+    toUserEmailLogin,
     getUserStatus,
     toUserLogout
 }

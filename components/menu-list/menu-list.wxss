@@ -1,7 +1,9 @@
 .hot-list {
   display: flex;
+  box-sizing: border-box;
   width: 750rpx;
-  margin-left: -24rpx;
+  padding: 0 10rpx;
+  margin: 0 -24rpx 0;
   height: 35vw;
   min-height: 200rpx;
 }

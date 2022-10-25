@@ -8,6 +8,7 @@ Page({
   },
   onLoad: function () {
     this.fetchTopMV()
+    this.fetchTopMV()
   },
   // 获取视频列表
   async fetchTopMV() {

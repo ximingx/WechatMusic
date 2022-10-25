@@ -1,20 +1,21 @@
+const {getSwiper} = require('../../services/index/index')
 Page({
-  data: {},
+  data: {
+    src: '',
+    banner: [],
+    phone: '',
+    verifyCode: '',
+  },
   onLoad: function (options) {
-
+    this.getBG()
   },
-  noneLogin() {
-    wx.switchTab({
-      url: '/pages/index/index'
+  getBG() {
+    getSwiper().then(res => {
+      this.setData({
+        banner: res.banners,
+        src: res.banners[0].imageUrl
+      })
+      wx.setStorageSync('banner', res.banners)
     })
-    setTimeout(() => {
-      
-    })
-  },
-  checkPhone() {
-
-  },
-  checkCode() {
-
   }
 });

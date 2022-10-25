@@ -3,7 +3,7 @@
     <scroll-view class="hot-list"
                  scroll-x enable-flex>
         <block wx:for="{{menuList}}" wx:key="id">
-            <hot-item item="{{item}}" class="hot-item"></hot-item>
+            <hot-item bind:tap="navTo" item="{{item}}" class="hot-item"></hot-item>
         </block>
     </scroll-view>
 </view>

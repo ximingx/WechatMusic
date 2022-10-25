@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3724033 */
+  src: url('//at.alicdn.com/t/c/font_3724033_z3mf7oxy0jg.woff2?t=1666580805621') format('woff2'),
+  url('//at.alicdn.com/t/c/font_3724033_z3mf7oxy0jg.woff?t=1666580805621') format('woff'),
+  url('//at.alicdn.com/t/c/font_3724033_z3mf7oxy0jg.ttf?t=1666580805621') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 48rpx;
+  color: #fff;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.icon-bofang1:before {
+  content: "\e624";
+}
+
+.icon-bofangliebiao:before {
+  content: "\e6a7";
+}
+
+.icon-danquxunhuan:before {
+  content: "\e66d";
+}
+
+.icon-zanting:before {
+  content: "\e629";
+}
+
+.icon-shipinbofang:before {
+  content: "\e600";
+}
+
+.icon-zuihouyiyemoyexiayishou:before {
+  content: "\e76d";
+}
+
+.icon-diyiyeshouyeshangyishou:before {
+  content: "\e76e";
+}
+
+.icon-xunhuanbofang:before {
+  content: "\e6bf";
+}
+
+.icon-bofang-xunhuanbofang:before {
+  content: "\e68d";
+}
