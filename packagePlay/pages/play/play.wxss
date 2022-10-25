@@ -1,0 +1,163 @@
+.bg-image, .bg-color {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg-color {
+  background-color: rgba(0, 0, 0, .2);
+  backdrop-filter: blur(30px);
+}
+
+.nav {
+  display: flex;
+  height: 44px;
+  color: #fff;
+}
+
+.nav .center {
+  flex: 1;
+  color: #ccc;
+}
+
+.nav .left, .nav .right {
+  width: 120rpx;
+}
+
+.center, .left, .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav .center .center-item {
+  color: #ccc;
+  margin: 0 10rpx;
+}
+
+.nav .center .active {
+  color: #fff;
+  font-weight: 700;
+}
+
+.swiper-music {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 80rpx 70rpx;
+  color: #ccc;
+}
+
+.swiper-music .album {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-music .info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.swiper-music .info .name {
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: 700;
+  line-height: 48rpx;
+  margin: 10rpx;
+}
+
+.swiper-music .info .singer {
+  color: rgba(236, 236, 236, 0.8);
+  font-size: 28rpx;
+  margin: 16rpx 10rpx;
+}
+
+.swiper-music .lyric {
+  margin: 30rpx 100rpx;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.process {
+  margin-bottom: 20rpx;
+}
+
+.process .slider {
+  margin: 0 0 4rpx 0;
+}
+
+.process .time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24rpx;
+  color: #fff;
+  margin-bottom: 18rpx;
+}
+
+.control {
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24rpx;
+}
+
+.control .iconfont:nth-child(3) {
+  transform: scale(1.8);
+}
+
+.control .iconfont:nth-child(-2n + 4) {
+  transform: scale(1.4);
+}
+
+.scroll-page {
+  box-sizing: border-box;
+  height: 100%;
+  padding-bottom: 100rpx !important;
+}
+
+.lyrics-list::webkit-scrollbar {
+  display: none;
+}
+
+.lyrics-item {
+  position: relative;
+  text-align: center;
+  padding: 20rpx;
+  color: #bbb;
+}
+
+.active {
+  color: #36b74d;
+}
+
+.lyrics-item .lyrics-time {
+  position: absolute;
+  top: transform(-50%);
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+
+
+
+
+
+
+
+

@@ -14,7 +14,7 @@ Component({
     onSongItemClick() {
       const id = this.properties.item.id;
       wx.navigateTo({
-        url: `/pages/play/play?id=${id}`,
+        url: `/packagePlay/pages/play/play?id=${id}`,
       })
     }
   }

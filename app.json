@@ -1,17 +1,26 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/index/index",
     "pages/video/video",
-    "pages/music/music",
-    "pages/user/user",
-    "pages/web/web",
-    "pages/detail/menu/menu",
-    "pages/detail/search/search",
-    "pages/detail/video/video",
-    "pages/play/play"
+    "pages/user/user"
   ],
-  "entryPagePath": "pages/login/login",
+  "subpackages": [
+    {
+      "root": "packageVideo",
+      "pages": [
+        "pages/detail/search/search",
+        "pages/detail/video/video"
+      ]
+    },
+    {
+      "root": "packagePlay",
+      "pages": [
+        "pages/play/play",
+        "pages/web/web"
+      ]
+    }
+  ],
+  "entryPagePath": "pages/index/index",
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -35,12 +44,6 @@
         "text": "视频",
         "iconPath": "assets/images/tabbar/video.png",
         "selectedIconPath": "assets/images/tabbar/video_active.png"
-      },
-      {
-        "pagePath": "pages/music/music",
-        "text": "私人FM",
-        "iconPath": "assets/images/tabbar/music.png",
-        "selectedIconPath": "assets/images/tabbar/music_active.png"
       },
       {
         "pagePath": "pages/user/user",

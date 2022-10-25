@@ -28,7 +28,7 @@ Page({
   // 搜索框
   onSearchClick() {
     wx.navigateTo({
-      url: '/pages/detail/search/search'
+      url: '/packageVideo/pages/detail/search/search'
     })
   },
   // 轮播图
@@ -48,7 +48,7 @@ Page({
     let src = e.currentTarget.dataset.view
     if (!src) return
     wx.navigateTo({
-      url: '/pages/web/web?src=' + encodeURIComponent(src),
+      url: '/packagePlay/pages/web/web?src=' + encodeURIComponent(src),
     })
   },
   async onBannerLoad() {

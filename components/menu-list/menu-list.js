@@ -9,12 +9,9 @@ Component({
       value: ''
     }
   },
-  data: {},
   methods: {
-    moreTap:function(){
-      wx.navigateTo({
-        url: "/pages/detail/menu/menu"
-      })
+    navTo(e) {
+      console.log(1)
     }
   }
 });
